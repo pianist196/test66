@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -280,12 +285,13 @@ p {
     margin-top: 19px;
 }
 
-.courses__top-lenght-circle-item{
+.courses__top-lenght-circle-item {
     margin-left: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .courses__top-lenght-circle-item:nth-child(2) {
     margin-left: 60px;
 }
@@ -334,4 +340,115 @@ p {
     line-height: 16px;
     color: #7C1854;
     margin-top: 15px;
+}
+
+.team {
+    background-color: #FBFBFB;
+    margin-bottom: 46px;
+}
+
+.team__container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.team__title-wrapper {
+    padding-top: 23px;
+    width: 842px;
+    height: 84px;
+    margin: 0 auto 77px;
+    position: relative;
+}
+
+.team__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4FFE7;
+    width: 842px;
+    height: 84px;
+}
+
+.team__title-figure {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 25px;
+    border-top-width: 0px;
+    border-left: 93px solid #F4FFE7;
+    position: absolute;
+}
+
+.team__items {
+    display: flex;
+    align-items: center;
+    padding-bottom: 147px;
+}
+
+.team__item {
+    margin-right: 110px;
+}
+
+.team__item:last-child {
+    margin-right: 0;
+}
+
+.team__item-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #7C1854;
+    margin-top: 17px;
+}
+
+.team__item-text > span {
+    font-weight: 700;
+}
+
+.submit__container {
+    max-width: 554px;
+    margin: 0 auto;
+    padding-bottom: 132px;
+}
+
+.submit__form {
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit__form-title {
+    max-width: 425px;
+    margin-bottom: 64px;
+    padding-top: 25px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.submit__form-input {
+    width: 474px;
+    border: none;
+    border-bottom: 2px solid #7C1854;
+    margin-bottom: 41px;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 12px;
+    color: #474747;
+    outline: none;
+}
+
+.submit__form-input:last-child {
+    margin-bottom: 80px;
+}
+
+.submit__form-input::placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 12px;
+    color: #474747;
+}
+
+.submit__button {
+    padding-bottom: 42px;
 }
