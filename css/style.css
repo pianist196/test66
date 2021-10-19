@@ -328,3 +328,10 @@ p {
 .courses__item {
     margin-right: 49px;
 }
+
+.courses__item-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #7C1854;
+    margin-top: 15px;
+}
