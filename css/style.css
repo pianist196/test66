@@ -171,9 +171,11 @@ p {
 
 .slider__items {
     padding-bottom: 93px;
+    display: flex;
 }
 
 .slider__item-wrapper {
+    display: flex;
     position: relative;
 }
 
@@ -195,10 +197,11 @@ p {
     justify-content: space-around;
     width: 787px;
     height: 381px;
+    transform: translate(12px, 22px);
     position: absolute;
-    bottom: -22px;
-    right: -12px;
-    z-index: 1;
+    /*bottom: -22px;*/
+    /*right: -12px;*/
+    /*z-index: 1;*/
 }
 
 .slider__item-title {

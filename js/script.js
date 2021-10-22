@@ -1,7 +1,7 @@
 const circles = document.querySelectorAll('.courses__top-lenght-circle')
 
 circles.forEach(circle => {
-    circle.addEventListener('click', (event) => {
+    circle.addEventListener('click', () => {
         removeActive(circles)
         circle.classList.add('circle-active')
     })
@@ -12,3 +12,7 @@ const removeActive = (items) => {
         items[i].classList.remove('circle-active')
     }
 }
+
+// $(document).ready(function () {
+//     $('.slider__items').slick()
+// })
