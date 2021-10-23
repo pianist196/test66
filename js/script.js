@@ -13,6 +13,20 @@ const removeActive = (items) => {
     }
 }
 
-// $(document).ready(function () {
-//     $('.slider__items').slick()
-// })
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 3000
+    }
+});
