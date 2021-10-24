@@ -543,7 +543,7 @@ p {
 }
 
 .team__item {
-    margin-right: 110px;
+    margin-right: calc(min(10vh, 10vw));
 }
 
 .team__item:last-child {
@@ -562,9 +562,9 @@ p {
 }
 
 .submit__container {
-    max-width: 554px;
+    max-width: 584px;
     margin: 0 auto;
-    padding-bottom: 132px;
+    padding: 0 15px 132px 15px;
 }
 
 .submit__form {
@@ -616,8 +616,9 @@ p {
 }
 
 .footer__container {
-    max-width: 1260px;
+    max-width: 1290px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .footer__inner {
@@ -726,6 +727,15 @@ p {
     .menu-item:first-child {
         margin-left: 40px;
     }
+
+    .team__title-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    .team__title {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -806,6 +816,41 @@ p {
     .courses__top-select {
         margin-bottom: 20px;
         margin-right: 0;
+    }
+
+    .team__items {
+        display: block;
+        padding-bottom: 0px;
+    }
+
+    .team__item {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .submit__container {
+        padding-bottom: 50px;
+    }
+
+    .submit__form-input {
+        width: 100%;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .footer__wrapper-left {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .footer__menu {
+        margin-left: 0;
+    }
+
+    .footer__logo {
+        margin-bottom: 30px;
     }
 }
 
